@@ -1,0 +1,15 @@
+<div>
+    <!-- Use the async pipe to subscribe to the items Observable -->
+    <div *ngFor="let item of items | async">
+      <!-- Assuming each item has a 'name' property you want to display -->
+      {{ item.message }} 
+    </div>
+  
+    <!-- The form for adding a new item -->
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+      <input type="text" name="message" ngModel required />
+  
+      <button type="submit" [disabled]="!f.valid">Submit</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "chatapp-c28ed"
+  },
+  "targets": {
+    "chatapp-c28ed": {
+      "hosting": {
+        "chatApp": [
+          "chatapp-c28ed"
+        ]
+      }
+    }
+  }
+}
